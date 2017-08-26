@@ -24,7 +24,7 @@ app
 
 ## Project Details
 
-Please read [Mining Farm](https://github.com/dgaydukov/cross-domain-iframe-integration/blob/master/problems.md) for more details
+Please read [Mining Farm](https://github.com/dgaydukov/nodejs-blockchain/blob/master/mining-farm.md) for more details
 
 
 ## Built With
