@@ -14,7 +14,8 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 ### Installing
 
 * Clone repository ```git clone git@github.com:dgaydukov/nodejs-blockchain.git```
-* Go to website ```cd nodejs-blockchain```, and run website ```npm start```
+* Go to project directory ```cd nodejs-blockchain```
+* Run project ```npm start```
 
 ## Project Structure
 
