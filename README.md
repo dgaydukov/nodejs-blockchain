@@ -16,12 +16,19 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 * Clone repository ```git clone git@github.com:dgaydukov/nodejs-blockchain.git```
 * Go to project directory ```cd nodejs-blockchain```
 * Run project ```npm start```
+* Run go etherium ```geth --rpc```
 
 ## Project Structure
 
 ```
 src #directory with source code
-
+-rest #directory with api functions
+--api #directory with REST API functions
+server.ts #entry point
+-monitor #directory with scripts that watch etherium and update db
+--watchers #directory with watchers
+--server.ts #entry point
+-models #directory with models used by both subprojects
 ```
 
 ## Project Details

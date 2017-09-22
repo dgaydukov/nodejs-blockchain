@@ -9,7 +9,7 @@ import * as mongoose from "mongoose";
  * DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated,
  * @type {PromiseConstructor}
  */
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/nodeJsBlockChain', { useMongoClient: true });
 
 /**
