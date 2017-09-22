@@ -1,0 +1,26 @@
+{
+  "apps" : [
+    {
+      "name": "nodejs-blockchain-app",
+      "script": "build/api/server.js",
+      "autorestart": true,
+      "watch": [ "build/api" ],
+      "ignore_watch": [ "src" ],
+      "env": {
+        "NODE_ENV": "dev",
+        "PORT": 3345
+      }
+    },
+    {
+      "name": "nodejs-blockchain-monitor",
+      "script": "build/monitor/server.js",
+      "autorestart": true,
+      "watch": [ "build/monitor" ],
+      "ignore_watch": [ "src" ],
+      "env": {
+        "NODE_ENV": "dev",
+        "PORT": 3346
+      }
+    }
+  ]
+}

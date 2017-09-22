@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-blockchain",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to create a self-growing farm that mines etherium and watch market and decides what to do.",
+  "main": "app/server.ts",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.12",
+    "request": "^2.82.0"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.0.37",
+    "@types/mongoose": "^4.7.22",
+    "@types/node": "^8.0.29",
+    "npm-run-all": "^4.1.1",
+    "typescript": "^2.5.2",
+    "typescript-compiler": "^1.4.1-2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-all --parallel watch:*",
+    "watch:build": "tsc --watch",
+    "watch:pm2": "pm2 start dev.ecosystem.json --no-daemon",
+    "watch:logs": "pm2 logs",
+    "mongo": "sudo service mongod start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgaydukov/nodejs-blockchain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgaydukov/nodejs-blockchain/issues"
+  },
+  "homepage": "https://github.com/dgaydukov/nodejs-blockchain#readme"
+}

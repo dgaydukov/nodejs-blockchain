@@ -17,8 +17,9 @@ Of course you can get cash and buy video card by yourself, but really, smart con
 
 ## Technology used
 
-* Etherium [api](https://github.com/ethereum/wiki/wiki/JavaScript-API)
-* Etheruim [json-rpc](https://github.com/ethereum/wiki/wiki/JSON-RPC)
+* Node.js [v7](https://nodejs.org/en/blog/release/v7.0.0/) web server
+* Mongoose [mongoose](https://www.npmjs.com/package/mongoose)
+* Etherium [geth](https://github.com/ethereum/go-ethereum/wiki/geth)  cli command
+* Etherium [api](https://github.com/ethereum/wiki/wiki/JavaScript-API)  js libbraty for geth
+* Etheruim [json-rpc](https://github.com/ethereum/wiki/wiki/JSON-RPC)  api for local geth
 * Machine learning tool [tensorflow](https://www.tensorflow.org) for self-learning
-* MEAN stack (mongo, express, angular, node) (For real project the best way is to use pg, but i want to show how to work with mongo)
-* es6, async-await

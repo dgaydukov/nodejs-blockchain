@@ -20,7 +20,8 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 ## Project Structure
 
 ```
-app
+src #directory with source code
+
 ```
 
 ## Project Details
