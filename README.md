@@ -22,13 +22,15 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 
 ```
 src #directory with source code
--rest #directory with api functions
---api #directory with REST API functions
-server.ts #entry point
--monitor #directory with scripts that watch etherium and update db
---watchers #directory with watchers
---server.ts #entry point
--models #directory with models used by both subprojects
+    rest #directory with api functions
+        api #directory with REST API functions
+        server.ts #entry point
+    monitor #directory with scripts that watch etherium and update db
+        watchers #directory with watchers
+        server.ts #entry point
+    common #directory with models used by both subprojects
+        models #directory with models
+        db.ts #database connection & settings
 ```
 
 ## Project Details

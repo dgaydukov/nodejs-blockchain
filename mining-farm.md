@@ -1,16 +1,16 @@
 # Mining Farm
 
 The purpose of this project is to create a self-growing farm that mines etherium and watch market and decides what to do.
-The farm is self-learning, and self-growing programm
+The farm is self-learning, and self-growing app
 
 ## Farm Strategy
 
-* In the beggining the farm is 6 video cards that mine ether
-* Farm mines ether, watch market and prognose revenue. And base on that, in every point of time decides what to do
+* In the beginning the farm has 6 video cards that all mine ether
+* Farm mines ether, watch market and forecast revenue. And base on that, in every point of time decides what to do
 1) Exchange ether to usd
-2) Exchange ehter to bitcoin
-3) Buy another videocard and grow itself
-* For buying videocard, we use [smart contract](https://www.ethereum.org/greeter).
+2) Exchange ether to bitcoin
+3) Buy another video card and grow itself
+* For buying video card, we use [smart contract](https://www.ethereum.org/greeter).
 Of course you can get cash and buy video card by yourself, but really, smart contracts are more interesting:)
 
 
