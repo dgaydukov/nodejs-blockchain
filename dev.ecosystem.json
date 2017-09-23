@@ -4,8 +4,8 @@
       "name": "nodejs-blockchain-rest",
       "script": "build/rest/server.js",
       "autorestart": true,
-      "watch": [ "build/rest" ],
-      "ignore_watch": [ "src" ],
+      "watch": ["build/rest", "build/common"],
+      "ignore_watch": ["src"],
       "env": {
         "NODE_ENV": "dev",
         "PORT": 3345
@@ -15,8 +15,8 @@
       "name": "nodejs-blockchain-monitor",
       "script": "build/monitor/server.js",
       "autorestart": true,
-      "watch": [ "build/monitor" ],
-      "ignore_watch": [ "src" ],
+      "watch": ["build/monitor", "build/common"],
+      "ignore_watch": ["src"],
       "env": {
         "NODE_ENV": "dev",
         "PORT": 3346

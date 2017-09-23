@@ -1,23 +1,29 @@
+/**
+ * Get an ethBlock
+ */
+
+import {ethBlockModel} from "../../common/models/ethBlock";
 
 
-const ethBlock = require("../../models/ethBlock");
 
 const ethBlockAPI = (router: any) => {
     router.route('/eth')
-        .post(function(req: any, res: any) {
+        .post((req: any, res: any)=>{
         })
-        .get(function(req: any, res: any) {
-            ethBlock.find((err: any, data: any)=>{
+        .get((req: any, res: any)=>{
+            console.log("get request")
+            ethBlockModel.find((err: any, data: any)=>{
                 console.log(err, data)
                 if (err) throw err;
                 res.json(data);
             });
         })
-        .put(function(req: any, res: any) {
+        .put((req: any, res: any)=>{
         })
-        .delete(function(req: any, res: any) {
+        .delete((req: any, res: any)=>{
         });
 
 }
+
 
 module.exports = ethBlockAPI;

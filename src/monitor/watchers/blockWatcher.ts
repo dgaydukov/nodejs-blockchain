@@ -1,8 +1,8 @@
 /**
  * Module dependencies.
  */
-const ethBlock = require("../../models/ethBlock");
-const request = require("request");
+import {ethBlockModel} from "../../common/models/ethBlock";
+import * as request from "request";
 
 const BASE_URL = "http://127.0.0.1:8545";
 const RPC_VERSION = "2.0";
@@ -48,7 +48,7 @@ class BlockWatcher{
             total_fee += parseInt(tran.gas) * parseInt(tran.gasPrice);
         }
 
-        const newBlock = ethBlock({
+        const newBlock = new ethBlockModel({
             number: body.id,
             hash: hash,
             timestamp: timestamp,
@@ -65,12 +65,11 @@ class BlockWatcher{
     }
     
     public run(){
-        ethBlock.findOne({}, {}, { sort: { 'number' : -1 } }, (err: any, block: any)=>{
+        ethBlockModel.findOne({}, {}, { sort: { 'number' : -1 } }, (err: any, block: any)=>{
             this.getEther(block.number+1)
         });
     }
 }
-
 
 const instance = new BlockWatcher();
 instance.run();

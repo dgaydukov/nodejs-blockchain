@@ -2,8 +2,8 @@
  * Module dependencies.
  */
 import * as express from "express";
-import * as mongoose from "mongoose";
 import * as bodyParser from 'body-parser';
+require("../common/db");
 
 /**
  * Create Express server.
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-const port = process.env.PORT || process.env.port ||  3000;
+const port: string = process.env.PORT || process.env.port ||  3000;
 
 /**
  * Routes for API
@@ -25,14 +25,14 @@ const port = process.env.PORT || process.env.port ||  3000;
 var router = express.Router();
 
 // middleware to use for all requests
-router.use(function(req, res, next) {
+router.use(function(req: any, res: any, next: any) {
     // do logging
     console.log('request is processing\n');
     next(); // make sure we go to the next routes and don't stop here
 });
 
 // test route to make sure everything is working
-router.get('/', function(req, res) {
+router.get('/', function(req: any, res: any) {
     res.json({ message: 'Node.js BlockChain REST API v.1.1' });
 });
 
@@ -51,5 +51,3 @@ require("./api/ethBlock")(router);
 app.listen(port, () => {
     console.log(("Node.js Api is running at http://localhost:%d"), port);
 });
-
-module.exports = app;

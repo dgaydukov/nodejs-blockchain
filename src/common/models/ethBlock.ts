@@ -1,11 +1,13 @@
 /**
  * Module dependencies.
  */
-import * as mongoose from "mongoose";
 
-var Schema = mongoose.Schema;
 
-const ethBlockSchema = new Schema({
+import {Schema, model} from "mongoose";
+
+
+
+const ethBlockSchema: Schema = new Schema({
     number: { type: Number, required: true, unique: true },
     hash: { type: String, required: true, unique: true },
     timestamp: Date,
@@ -16,4 +18,4 @@ const ethBlockSchema = new Schema({
 });
 
 
-module.exports = mongoose.model('eth_block', ethBlockSchema);
+export const ethBlockModel = model('eth_block', ethBlockSchema);
