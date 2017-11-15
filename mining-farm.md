@@ -13,7 +13,12 @@ The farm is self-learning, and self-growing app
 * For buying video card, we use [smart contract](https://www.ethereum.org/greeter).
 Of course you can get cash and buy video card by yourself, but really, smart contracts are more interesting:)
 
+## Farm Description
 
+System learns to choose the most profitable crypto currency and mine it for some time. The more less time for mining, the more accurate profit forecast and prices &
+currency risks, but more higher commission percent on selling mined currency. Time of mining can be limited. Limit determined by the ratio of mining farm to currency risk.
+Switching from one currency to another has some price, that goes down with time. Also with time grows probability of real mining profit from expected, forecasting reassess and
+system can make decision.
 
 ## Technology used
 
